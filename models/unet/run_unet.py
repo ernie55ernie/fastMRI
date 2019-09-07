@@ -136,7 +136,7 @@ def create_arg_parser():
     parser.add_argument('--mask-kspace', action='store_true',
                         help='Whether to apply a mask (set to True for val data and False '
                              'for test data')
-    parser.add_argument('--data-split', choices=['val', 'test'], required=True,
+    parser.add_argument('--data-split', choices=['val', 'test', 'test_v2'], required=True,
                         help='Which data partition to run on: "val" or "test"')
     parser.add_argument('--checkpoint', type=pathlib.Path, required=True,
                         help='Path to the U-Net model')
